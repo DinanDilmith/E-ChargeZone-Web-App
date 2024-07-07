@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-ChargeZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        .hero-bg {
+            background-image: url("landing.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .about-bg {
+            background-image: url("123.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .dark-bg {
+            background-color: #1a1a1a;
+        }
+        
+        .dark-bg-alt {
+            background-color: #333;
+        }
+        
+        .dark-text {
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-gray-200 dark-bg">
+    <!-- Navigation -->
+    <nav class="bg-black text-yellow-400 py-4 fixed w-full z-20 dark-bg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">E-ChargeZone</h1>
+            <div>
+                <a href="#hero" class="mx-2 hover:text-yellow-500">Home</a>
+                <a href="#features" class="mx-2 hover:text-yellow-500">Features</a>
+                <a href="#about" class="mx-2 hover:text-yellow-500">About Us</a>
+                <a href="#contact" class="mx-2 hover:text-yellow-500">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg relative py-40 flex items-center">
+        <div class="overlay absolute inset-0"></div>
+        <div class="container mx-auto text-center px-4 relative z-10">
+            <h2 class="text-4xl font-bold mb-4 dark-text">
+                Welcome to E-ChargeZone
+            </h2>
+            <p class="mb-8 dark-text max-w-xl mx-auto">
+                Discover a seamless and hassle-free way to book charging slots for your electric vehicle. At E-ChargeZone, we provide a user-friendly platform to easily find and reserve charging stations, ensuring access to the best spots anytime and anywhere.
+            </p>
+            <a href="#features" class="bg-yellow-400 text-gray-900 py-2 px-4 rounded hover:bg-yellow-500">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 dark-bg">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-8 dark-text">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="dark-bg-alt p-6 rounded-lg mx-2">
+                    <h3 class="text-2xl font-bold mb-4 dark-text">Easy Booking</h3>
+                    <p class="dark-text">Book charging slots with just a few clicks.</p>
+                </div>
+                <div class="dark-bg-alt p-6 rounded-lg mx-2">
+                    <h3 class="text-2xl font-bold mb-4 dark-text">
+                        Real-Time Availability
+                    </h3>
+                    <p class="dark-text">
+                        Check the availability of charging slots in real-time.
+                    </p>
+                </div>
+                <div class="dark-bg-alt p-6 rounded-lg mx-2">
+                    <h3 class="text-2xl font-bold mb-4 dark-text">Secure Payments</h3>
+                    <p class="dark-text">Make secure payments for your bookings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-bg relative py-20 flex items-center">
+        <div class="overlay absolute inset-0"></div>
+        <div class="container mx-auto text-center px-4 relative z-10">
+            <h2 class="text-3xl font-bold mb-8 dark-text">About Us</h2>
+            <p class="max-w-2xl mx-auto dark-text">
+                E-ChargeZone is dedicated to providing a seamless and efficient way to book charging slots for your electric vehicle. Our mission is to support the growing electric vehicle community by making the charging process convenient and accessible. Join us in
+                our journey towards a greener and more sustainable future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 dark-bg">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-8 dark-text">Hurry up !!! Book your charging slot Today !!!</h2>
+            <p class="max-w-xl mx-auto mb-8 dark-text">
+                For any inquiries or support, please contact us at
+                <a href="mailto:support@echargezone.com" class="text-yellow-400">support@echargezone.com</a
+          >.
+        </p>
+        <form class="max-w-xl mx-auto">
+          
+          <div class="mb-4">
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full p-3 rounded dark-bg-alt border border-gray-700 dark-text"
+            />
+            </div>
+            <div class="mb-4">
+              <input
+                type="password"
+                placeholder="Password"
+                class="w-full p-3 rounded dark-bg-alt border border-gray-700 dark-text"
+              />
+          </div>
+          <p class="max-w-xl mx-auto mb-8 dark-text">
+            Don't have an account?
+            <a href="signup.html" class="text-yellow-400">Sign up</a
+      > today.</p>
+          <button
+            type="submit"
+            class="bg-yellow-400 text-gray-900 py-2 px-4 rounded hover:bg-yellow-500"
+          >
+            Sign in
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4 dark-bg">
+      <div class="container mx-auto text-center px-4">
+        <p class="dark-text">&copy; 2024 E-ChargeZone. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
